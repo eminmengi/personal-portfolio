@@ -15,7 +15,7 @@
       "UI/UX Tutkunuyum",
       "Teknoloji Severim"
     ],
-    "cta": "Harika şeyler inşa edelim.",
+    "cta": "Birlikte harika bir şey inşa edelim.",
     "description": [
       {
         "text": "Şu anda",
@@ -52,12 +52,16 @@
     "birth": "Doğum Tarihi:",
     "city": "İkamet Şehri:",
     "education": "Eğitim Durumu:",
-    "educationDetail": "Eskişehir Osmangazi - Biyoloji Lisans (2016)",
+    "educationDetail": "Eskişehir Osmangazi Üniversitesi - Matematik ve Bilgisayar Bilimleri MSc",
     "role": "Tercih Ettiği Rol:",
-    "roleDetail": "Frontend Geliştirici, UI",
+    "roleDetail": "Fullstack Geliştirici",
     "aboutTitle": "Hakkımda",
-    "about1": "Temiz, işlevsel ve erişilebilir arayüzler geliştirmeyi seven bir frontend geliştiricisiyim. Performans, tasarım tutarlılığı ve sürdürülebilir kod yazımına önem veririm.",
-    "about2": "Tasarım ve kod aracılığıyla fikirleri hayata geçirmekten keyif alıyor, bu süreçte kendimi sürekli geliştirmeye odaklanıyorum."
+    "about1": "Yaratıcı bir Full Stack Geliştirici olarak, sağlam ve ölçeklenebilir web çözümleri tasarlayıp inşa ediyorum. Karmaşık problemleri çözmekten ve bunları kusursuz, yüksek performanslı kullanıcı deneyimlerine dönüştürmekten keyif alıyorum.",
+    "about2": "Veritabanı mimarisinden piksel hassasiyetindeki arayüzlere kadar, inovasyonu destekleyen ve kullanıcılara gerçek değer katan temiz, sürdürülebilir kodlar yazmaya odaklanıyorum.",
+    "basicInfo": "Temel Bilgiler",
+    "birthDate": "18.09.1996",
+    "cityVal": "Eskisehir",
+    "openToWork": "İş Tekliflerine Açık"
   },
   "projects": {
     "title": "Projeler",

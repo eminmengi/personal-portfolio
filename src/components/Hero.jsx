@@ -14,7 +14,7 @@ const Hero = () => {
       <div className="absolute top-0 right-0 w-[30%] h-full bg-[#CBF281] dark:bg-[#1A210B] opacity-10 skew-x-12 translate-x-1/2 pointer-events-none transition-colors duration-300" />
       <div className="absolute bottom-0 left-0 w-64 h-64 bg-white opacity-5 rounded-full blur-3xl pointer-events-none" />
 
-      <div className="max-w-[960px] mx-auto px-6 w-full flex flex-col md:flex-row items-center justify-between gap-12 lg:gap-20 relative z-10">
+      <div className="max-w-[1240px] mx-auto px-6 w-full flex flex-col md:flex-row items-center justify-between gap-12 lg:gap-20 relative z-10">
 
         {/* Left Side (Text) */}
         <div className="flex flex-col gap-6 md:w-3/5">
@@ -100,7 +100,7 @@ const Hero = () => {
 
             {/* Main Image */}
             <img
-              src="/profile2.jpg"
+              src="/hero.png"
               alt="Hero Profile"
               className="relative w-full h-full object-cover rounded-[24px] shadow-2xl z-10 hover:scale-[1.02] transition-transform duration-500"
             />

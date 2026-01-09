@@ -52,12 +52,16 @@
     "birth": "Date of Birth:",
     "city": "City:",
     "education": "Education:",
-    "educationDetail": "Hacettepe University - Biology, BSc (2016)",
+    "educationDetail": "Eskisehir Osmangazi University - Math and Computer Science, MSc",
     "role": "Preferred Role:",
     "roleDetail": "Frontend Developer, UI",
     "aboutTitle": "About Me",
-    "about1": "I'm a frontend developer who enjoys building clean, functional, and accessible interfaces. I focus on performance, design consistency, and writing maintainable code.",
-    "about2": "I’m passionate about bringing ideas to life through design and code, always improving my skills in the process."
+    "about1": "As a creative Full Stack Developer, I architect and build robust, scalable web solutions. I thrive on solving complex problems and transforming them into seamless, high-performance user experiences.",
+    "about2": "From database design to pixel-perfect UIs, I am dedicated to writing clean, maintainable code that drives innovation and delivers real value to users.",
+    "basicInfo": "Basic Information",
+    "birthDate": "18.09.1996",
+    "cityVal": "Eskisehir",
+    "openToWork": "Open to Work"
   },
   "projects": {
     "title": "Projects",
