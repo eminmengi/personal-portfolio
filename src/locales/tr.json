@@ -1,0 +1,55 @@
+{
+  "navbar": {
+    "name": "EMİN MENGİ",
+    "switchLang": "Switch to English",
+    "dark": "Karanlık",
+    "light": "Aydınlık"
+  },
+  "hero": {
+    "title": "Ben bir Frontend Geliştiricisiyim.",
+    "subtitle": "Sağlam ve ölçeklenebilir arayüzler geliştirirken kullanıcı deneyimini ön planda tutarım.",
+    "github": "Github",
+    "linkedin": "LinkedIn"
+  },
+  "skills": {
+    "title": "Yetenekler",
+    "js": "Javascript",
+    "react": "React",
+    "redux": "Redux",
+    "node": "Node.js",
+    "vscode": "VS Code",
+    "figma": "Figma"
+  },
+  "profile": {
+    "title": "Profil",
+    "birth": "Doğum Tarihi:",
+    "city": "İkamet Şehri:",
+    "education": "Eğitim Durumu:",
+    "educationDetail": "Eskişehir Osmangazi - Biyoloji Lisans (2016)",
+    "role": "Tercih Ettiği Rol:",
+    "roleDetail": "Frontend Geliştirici, UI",
+    "aboutTitle": "Hakkımda",
+    "about1": "Temiz, işlevsel ve erişilebilir arayüzler geliştirmeyi seven bir frontend geliştiricisiyim. Performans, tasarım tutarlılığı ve sürdürülebilir kod yazımına önem veririm.",
+    "about2": "Tasarım ve kod aracılığıyla fikirleri hayata geçirmekten keyif alıyor, bu süreçte kendimi sürekli geliştirmeye odaklanıyorum."
+  },
+  "projects": {
+    "title": "Projeler",
+    "view": "Siteyi Görüntüle",
+    "github": "Github",
+    "p1": {
+      "title": "E-commerce",
+      "desc": "React, Redux ve modern arayüz ilkelerine odaklanan bir eğitim platformu projesi. Dinamik bileşenler ve responsive tasarım içerir."
+    },
+    "p2": {
+      "title": "Journey",
+      "desc": "Context API, animasyonlar ve tam responsive yapı kullanan bir kişisel proje takip uygulaması."
+    }
+  },
+  "contact": {
+    "title": "Bana Ulaş",
+    "subtitle": "Bir sorunuz, fikriniz veya projeniz mi var? Dilediğiniz zaman iletişime geçebilirsiniz.",
+    "email": "E-posta Adresiniz",
+    "submit": "Gönder",
+    "footer": "Tüm hakları saklıdır."
+  }
+}

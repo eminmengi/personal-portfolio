@@ -1,0 +1,55 @@
+{
+  "navbar": {
+    "name": "EMİN MENGİ",
+    "switchLang": "Switch to Turkish",
+    "dark": "Dark",
+    "light": "Light"
+  },
+  "hero": {
+    "title": "I am a Frontend Developer.",
+    "subtitle": "I like to craft solid and scalable frontend products with great user experiences.",
+    "github": "Github",
+    "linkedin": "LinkedIn"
+  },
+  "skills": {
+    "title": "Skills",
+    "js": "Javascript",
+    "react": "React",
+    "redux": "Redux",
+    "node": "Node.js",
+    "vscode": "VS Code",
+    "figma": "Figma"
+  },
+  "profile": {
+    "title": "Profile",
+    "birth": "Date of Birth:",
+    "city": "City:",
+    "education": "Education:",
+    "educationDetail": "Hacettepe University - Biology, BSc (2016)",
+    "role": "Preferred Role:",
+    "roleDetail": "Frontend Developer, UI",
+    "aboutTitle": "About Me",
+    "about1": "I'm a frontend developer who enjoys building clean, functional, and accessible interfaces. I focus on performance, design consistency, and writing maintainable code.",
+    "about2": "I’m passionate about bringing ideas to life through design and code, always improving my skills in the process."
+  },
+  "projects": {
+    "title": "Projects",
+    "view": "View Site",
+    "github": "Github",
+    "p1": {
+      "title": "E-commerce Project",
+      "desc": "An educational platform project focused on React, Redux and modern UI principles. Includes dynamic components and responsive layouts."
+    },
+    "p2": {
+      "title": "Journey",
+      "desc": "A personal project tracker application with Context API, animations and full responsiveness."
+    }
+  },
+  "contact": {
+    "title": "Contact Me",
+    "subtitle": "Got a question, idea, or project? Feel free to reach out anytime.",
+    "email": "Your Email",
+    "submit": "Send Message",
+    "footer": "All rights reserved."
+  }
+}

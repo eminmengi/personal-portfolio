@@ -1,56 +1,65 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const Profile = () => {
-  return (
-    <section className="py-24 bg-primary text-white dark:bg-dark transition-colors duration-300">
-      <div className="max-w-6xl mx-auto px-6 md:px-12 grid md:grid-cols-3 gap-12 items-center">
-        
-        {/* Sol taraf: Basic Info */}
-        <motion.div
-          initial={{ opacity: 0, x: -40 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          <h2 className="text-3xl font-bold mb-6 text-accent">Profile</h2>
-          <div className="space-y-3 text-sm">
-            <p><span className="font-semibold text-accent">Doğum tarihi:</span> 24.03.1996</p>
-            <p><span className="font-semibold text-accent">İkamet Şehri:</span> Ankara</p>
-            <p><span className="font-semibold text-accent">Eğitim Durumu:</span> Hacettepe Ünv. Biyoloji Lisans, 2016</p>
-            <p><span className="font-semibold text-accent">Tercih Ettiği Rol:</span> Frontend, UI</p>
-          </div>
-        </motion.div>
+  const { t } = useTranslation();
 
-        {/* Orta: Görsel */}
+  return (
+    <section id="profile" className="py-24 bg-[#4731D3] dark:bg-[#171043] transition-colors duration-300">
+      <div className="max-w-[960px] mx-auto px-6 grid grid-cols-1 md:grid-cols-[300px_300px_300px] gap-8 items-start justify-center text-white">
+
+        {/* Basic Info */}
+        <div className="space-y-6">
+          <h2 className="text-[30px] font-medium leading-[28px] text-[#CBF281]">
+            {t("profile.title")}
+          </h2>
+          <div className="space-y-4">
+            <div className="grid grid-cols-[100px_1fr] gap-2">
+              <span className="font-semibold text-[#CBF281]">{t("profile.birth")}</span>
+              <span className="font-normal text-white">24.03.1996</span>
+            </div>
+            <div className="grid grid-cols-[100px_1fr] gap-2">
+              <span className="font-semibold text-[#CBF281]">{t("profile.city")}</span>
+              <span className="font-normal text-white">Ankara</span>
+            </div>
+            <div className="grid grid-cols-[100px_1fr] gap-2">
+              <span className="font-semibold text-[#CBF281]">{t("profile.education")}</span>
+              <span className="font-normal text-white">{t("profile.educationDetail")}</span>
+            </div>
+            <div className="grid grid-cols-[100px_1fr] gap-2">
+              <span className="font-semibold text-[#CBF281]">{t("profile.role")}</span>
+              <span className="font-normal text-white">{t("profile.roleDetail")}</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Image with Frame and Animation */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6 }}
-          className="flex justify-center"
+          transition={{ duration: 0.7 }}
+          className="relative w-[300px] h-[290px] mx-auto md:mx-0"
         >
+          <div className="absolute inset-0 bg-white/10 rounded-[10px] transform rotate-3 scale-105"></div>
           <img
-            src="/profile2.png"
+            src="/profile2.jpg"
             alt="Profile working"
-            className="rounded-2xl shadow-xl w-72 md:w-80"
+            className="w-full h-full object-cover rounded-[10px] shadow-[0px_8px_28px_-6px_rgba(24,39,75,0.12),0px_18px_88px_-4px_rgba(24,39,75,0.14)] relative z-10"
           />
         </motion.div>
 
-        {/* Sağ taraf: About Me */}
-        <motion.div
-          initial={{ opacity: 0, x: 40 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          <h3 className="text-xl font-semibold mb-3 text-accent">About Me</h3>
-          <p className="text-sm leading-relaxed">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Venıam aut, 
-            odit laborum aliquam voluptatum nisi mollitia. Minima accusamus ratione 
-            soluta aperiam sit voluptatem?
+        {/* About Me */}
+        <div className="space-y-6">
+          <h3 className="text-[30px] font-medium leading-[30px] text-white">
+            {t("profile.aboutTitle")}
+          </h3>
+          <p className="text-[18px] font-normal leading-[27px] text-white">
+            {t("profile.about1")}
           </p>
-          <p className="text-sm leading-relaxed mt-4">
-            Dicta quod deserunt quam temporibus cumque magnam! Lorem ipsum dolor sit amet.
+          <p className="text-[18px] font-normal leading-[27px] text-white">
+            {t("profile.about2")}
           </p>
-        </motion.div>
-
+        </div>
       </div>
     </section>
   );

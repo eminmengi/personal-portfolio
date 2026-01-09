@@ -1,52 +1,58 @@
 import { motion } from "framer-motion";
-import { SiJavascript, SiReact, SiRedux, SiNodedotjs, SiVscodium, SiFigma } from "react-icons/si";
+import { useTranslation } from "react-i18next";
+import {
+  SiJavascript,
+  SiReact,
+  SiRedux,
+  SiNodedotjs,
+  SiVscodium,
+  SiFigma,
+} from "react-icons/si";
 
 const skills = [
-  { icon: <SiJavascript className="text-yellow-400 text-6xl" />, name: "JAVASCRIPT" },
-  { icon: <SiReact className="text-sky-400 text-6xl" />, name: "REACT" },
-  { icon: <SiRedux className="text-purple-500 text-6xl" />, name: "REDUX" },
-  { icon: <SiNodedotjs className="text-green-500 text-6xl" />, name: "NODE" },
-  { icon: <SiVscodium className="text-blue-500 text-6xl" />, name: "VS CODE" },
-  { icon: <SiFigma className="text-pink-500 text-6xl" />, name: "FIGMA" },
+  { name: "JAVASCRIPT", icon: <SiJavascript className="text-[#F7DF1E] text-6xl" />, key: "js" },
+  { name: "REACT", icon: <SiReact className="text-[#61DAFB] text-6xl" />, key: "react" },
+  { name: "REDUX", icon: <SiRedux className="text-[#764ABC] text-6xl" />, key: "redux" },
+  { name: "NODE", icon: <SiNodedotjs className="text-[#339933] text-6xl" />, key: "node" },
+  { name: "VS CODE", icon: <SiVscodium className="text-[#007ACC] text-6xl" />, key: "vscode" },
+  { name: "FIGMA", icon: <SiFigma className="text-[#F24E1E] text-6xl" />, key: "figma" },
 ];
 
 const Skills = () => {
-  return (
-    <section className="py-24 bg-light dark:bg-dark transition-colors duration-300">
-      <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold text-primary dark:text-accent">Skills</h2>
-      </div>
+  const { t } = useTranslation();
 
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={{
-          hidden: { opacity: 0, y: 40 },
-          visible: { opacity: 1, y: 0, transition: { duration: 0.6, staggerChildren: 0.2 } },
-        }}
-        className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-10 justify-items-center max-w-5xl mx-auto"
-      >
-        {skills.map((skill, index) => (
-          <motion.div
-            key={index}
-            variants={{
-              hidden: { opacity: 0, y: 20 },
-              visible: { opacity: 1, y: 0 },
-            }}
-            whileHover={{ scale: 1.1 }}
-            transition={{ duration: 0.2 }}
-            className="flex flex-col items-center gap-3"
-          >
-            <div className="p-6 bg-white dark:bg-gray-800 shadow-md rounded-xl hover:shadow-xl transition-shadow">
-              {skill.icon}
-            </div>
-            <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
-              {skill.name}
-            </span>
-          </motion.div>
-        ))}
-      </motion.div>
+  return (
+    <section id="skills" className="py-24 bg-white dark:bg-[#252128] transition-colors duration-300 relative">
+      <div className="max-w-[960px] mx-auto px-6 relative flex flex-col md:flex-row gap-8">
+
+        {/* Title Side */}
+        <div className="md:w-1/3">
+          <h2 className="text-[48px] font-bold text-[#4832D3] dark:text-[#CBF281] leading-[58px]">
+            {t("skills.title")}
+          </h2>
+        </div>
+
+        {/* Skills Grid */}
+        <div className="md:w-2/3 flex flex-wrap gap-x-8 gap-y-10">
+          {skills.map((skill, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              viewport={{ once: true }}
+              className="flex flex-col md:flex-row items-center gap-4 w-[45%] md:w-[45%]"
+            >
+              <div className="w-[120px] h-[120px] bg-white dark:bg-[#171043] rounded-md shadow-[0px_8px_28px_-6px_rgba(24,39,75,0.12),0px_18px_88px_-4px_rgba(24,39,75,0.14)] dark:shadow-none flex items-center justify-center transition-colors duration-300">
+                {skill.icon}
+              </div>
+              <span className="text-[24px] font-medium text-[#777777] dark:text-gray-300 uppercase font-inter leading-[36px]">
+                {skill.name}
+              </span>
+            </motion.div>
+          ))}
+        </div>
+      </div>
     </section>
   );
 };
