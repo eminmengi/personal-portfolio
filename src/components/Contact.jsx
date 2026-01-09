@@ -1,63 +1,77 @@
-import { motion } from "framer-motion";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { FaTwitter, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { useForm } from "react-hook-form";
-import { toast } from 'react-toastify';
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { ArrowRight, Copy, Check } from "lucide-react";
 
 const Contact = () => {
   const { t } = useTranslation();
-  const { register, handleSubmit, reset } = useForm();
+  const [copied, setCopied] = useState(false);
 
-  const onSubmit = (data) => {
-    toast.success("Message sent! (Demo)");
-    reset();
+  const handleCopy = () => {
+    navigator.clipboard.writeText("eminmengi@gmail.com");
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
   };
 
   return (
-    <section id="contact" className="py-24 bg-[#F9F9F9] dark:bg-[#252128] transition-colors duration-300 flex flex-col items-center">
-      <div className="max-w-[483px] mx-auto text-center flex flex-col gap-6">
-        <h2 className="text-[48px] font-bold text-[#4731D3] dark:text-[#8F88FF] leading-[72px]">
+    <section id="contact" className="relative py-32 bg-[#F9F9F9] dark:bg-[#252128] transition-colors duration-300 overflow-hidden">
+      {/* Decorative Background Glow */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] md:w-[600px] md:h-[600px] bg-[#4731D3] opacity-5 dark:opacity-[0.03] rounded-full blur-[100px] pointer-events-none" />
+
+      <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
+        <h2 className="text-[42px] md:text-[56px] font-bold text-[#4731D3] dark:text-[#8F88FF] leading-tight mb-8">
           {t("contact.title")}
         </h2>
 
-        <p className="text-[24px] font-normal leading-[36px] text-[#120B39] dark:text-white">
+        <p className="text-[20px] md:text-[24px] text-[#120B39] dark:text-white mb-12 max-w-2xl mx-auto">
           {t("contact.subtitle")}
         </p>
 
-        <a
-          href="mailto:almilasucode@gmail.com"
-          className="text-[20px] font-medium text-[#4731D3] dark:text-[#8F88FF] underline underline-offset-4"
-        >
-          eminmengi@gmail.com
-        </a>
-
-        <div className="flex justify-center gap-6 mt-4">
-          <a href="#" className="text-[#4731D3] dark:text-[#8F88FF] text-3xl hover:scale-110 transition-transform"><FaTwitter /></a>
-          <a href="#" className="text-[#4731D3] dark:text-[#8F88FF] text-3xl hover:scale-110 transition-transform"><FaGithub /></a>
-          <a href="#" className="text-[#4731D3] dark:text-[#8F88FF] text-3xl hover:scale-110 transition-transform"><FaLinkedin /></a>
-          <a href="#" className="text-[#4731D3] dark:text-[#8F88FF] text-3xl hover:scale-110 transition-transform"><FaInstagram /></a>
-        </div>
-
-        {/* Contact Form */}
-        <form onSubmit={handleSubmit(onSubmit)} className="w-full max-w-[500px] flex flex-col gap-4 mt-8 text-left px-4 md:px-0">
-          <div>
-            <label className="text-sm font-medium text-[#4731D3] dark:text-[#8F88FF] mb-1 block">
-              {t("contact.email")}
-            </label>
-            <input
-              {...register("email", { required: true })}
-              className="w-full h-12 px-4 rounded-md border border-[#4731D3] dark:border-[#8F88FF] bg-white dark:bg-[#171043] text-[#120B39] dark:text-white outline-none focus:ring-2 focus:ring-[#CBF281] transition-all"
-              placeholder="Enter your email"
-            />
-          </div>
+        {/* Email & Copy Wrapper */}
+        <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-16">
+          <a
+            href="mailto:eminmengi@gmail.com"
+            className="group relative inline-flex items-center gap-3 text-[24px] md:text-[32px] font-medium text-[#4731D3] dark:text-[#8F88FF] transition-colors"
+          >
+            <span className="relative z-10">eminmengi@gmail.com</span>
+            <ArrowRight className="w-8 h-8 transform group-hover:translate-x-2 transition-transform duration-300" />
+            <div className="absolute bottom-0 left-0 w-full h-[2px] bg-[#4731D3] dark:bg-[#8F88FF] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+          </a>
 
           <button
-            type="submit"
-            className="h-12 bg-[#4731D3] dark:bg-[#CBF281] text-white dark:text-[#171043] font-bold rounded-md hover:opacity-90 transition-opacity"
+            onClick={handleCopy}
+            className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#4731D3]/10 dark:bg-[#8F88FF]/10 text-[#4731D3] dark:text-[#8F88FF] font-medium text-sm hover:bg-[#4731D3]/20 dark:hover:bg-[#8F88FF]/20 transition-all active:scale-95"
           >
-            {t("contact.submit")}
+            {copied ? <Check size={18} /> : <Copy size={18} />}
+            {copied ? "Copied!" : "Copy"}
           </button>
-        </form>
+        </div>
+
+        <div className="flex justify-center gap-8">
+          <a
+            href="https://github.com/eminmengi"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#4731D3] dark:text-[#8F88FF] hover:scale-110 transition-transform duration-300"
+          >
+            <FaGithub size={40} />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/eminmengi"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#4731D3] dark:text-[#8F88FF] hover:scale-110 transition-transform duration-300"
+          >
+            <FaLinkedin size={40} />
+          </a>
+        </div>
+
+        {/* Footer / Copyright */}
+        <div className="mt-24 pt-8 border-t border-[#4731D3]/20 dark:border-[#8F88FF]/20">
+          <p className="text-sm md:text-base font-medium text-[#120B39]/60 dark:text-white/60">
+            © {new Date().getFullYear()} Emin Mengi. {t("contact.footer")}
+          </p>
+        </div>
       </div>
     </section>
   );

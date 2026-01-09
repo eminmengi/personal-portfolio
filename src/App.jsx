@@ -4,8 +4,6 @@ import Skills from './components/Skills'
 import Profile from './components/Profile'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -18,7 +16,6 @@ function App() {
         <Projects />
         <Contact />
       </main>
-      <ToastContainer position="bottom-right" autoClose={3000} />
     </div>
   )
 }

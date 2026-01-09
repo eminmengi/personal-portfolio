@@ -79,12 +79,6 @@ const Profile = () => {
                 {t("profile.about2")}
               </p>
             </div>
-
-            {/* Optional Signature or detail */}
-            <div className="pt-4 flex items-center gap-2">
-              <div className="w-2 h-2 rounded-full bg-[#CBF281]"></div>
-              <span className="text-[#CBF281] font-medium tracking-wide text-sm">{t("profile.openToWork")}</span>
-            </div>
           </motion.div>
         </div>
       </div>
