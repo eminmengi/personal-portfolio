@@ -1,10 +1,4 @@
 {
-  "navbar": {
-    "name": "EMİN MENGİ",
-    "switchLang": "Switch to English",
-    "dark": "Karanlık",
-    "light": "Aydınlık"
-  },
   "hero": {
     "greeting": "Merhaba",
     "downloadCv": "CV İndir",
@@ -17,37 +11,10 @@
       "Problem Çözücüyüm.",
       "Algoritmik Düşünürüm."
     ],
-    "cta": "Birlikte harika bir şey inşa edelim.",
-    "description": [
-      {
-        "text": "Şu anda",
-        "bold": false
-      },
-      {
-        "text": "Kullanıcı Deneyimi, Kullanılabilirlik, Tasarım",
-        "bold": true,
-        "underline": true
-      },
-      {
-        "text": "projeleri için serbest çalışıyorum. Beni takımınıza davet edin ->",
-        "bold": false
-      },
-      {
-        "text": "eminmengi@gmail.com",
-        "bold": true,
-        "isEmail": true,
-        "underline": true
-      }
-    ]
+    "cta": "Birlikte harika bir şey inşa edelim."
   },
   "skills": {
-    "title": "Yetenekler",
-    "js": "Javascript",
-    "react": "React",
-    "redux": "Redux",
-    "node": "Node.js",
-    "vscode": "VS Code",
-    "figma": "Figma"
+    "title": "Yetenekler"
   },
   "profile": {
     "title": "Profil",
@@ -62,8 +29,7 @@
     "about2": "Veritabanı mimarisinden piksel hassasiyetindeki arayüzlere kadar, inovasyonu destekleyen ve kullanıcılara gerçek değer katan temiz, sürdürülebilir kodlar yazmaya odaklanıyorum.",
     "basicInfo": "Temel Bilgiler",
     "birthDate": "18.09.1996",
-    "cityVal": "Eskisehir",
-    "openToWork": "İş Tekliflerine Açık"
+    "cityVal": "Eskisehir"
   },
   "projects": {
     "title": "Projeler",
@@ -81,8 +47,6 @@
   "contact": {
     "title": "Bana Ulaş",
     "subtitle": "Bir sorunuz, fikriniz veya projeniz mi var? Dilediğiniz zaman iletişime geçebilirsiniz.",
-    "email": "E-posta Adresiniz",
-    "submit": "Gönder",
     "footer": "Tüm hakları saklıdır."
   }
 }

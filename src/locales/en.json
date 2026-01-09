@@ -1,10 +1,4 @@
 {
-  "navbar": {
-    "name": "EMİN MENGİ",
-    "switchLang": "Switch to Turkish",
-    "dark": "Dark",
-    "light": "Light"
-  },
   "hero": {
     "greeting": "Hello",
     "downloadCv": "Download CV",
@@ -17,37 +11,10 @@
       "a Problem Solver.",
       "an Algorithmic Thinker."
     ],
-    "cta": "Let's build something great together.",
-    "description": [
-      {
-        "text": "Currently freelancing for",
-        "bold": false
-      },
-      {
-        "text": "User Experience, Usability, Design",
-        "bold": true,
-        "underline": true
-      },
-      {
-        "text": "projects. Invite me to join your team ->",
-        "bold": false
-      },
-      {
-        "text": "eminmengi@gmail.com",
-        "bold": true,
-        "isEmail": true,
-        "underline": true
-      }
-    ]
+    "cta": "Let's build something great together."
   },
   "skills": {
-    "title": "Skills",
-    "js": "Javascript",
-    "react": "React",
-    "redux": "Redux",
-    "node": "Node.js",
-    "vscode": "VS Code",
-    "figma": "Figma"
+    "title": "Skills"
   },
   "profile": {
     "title": "Profile",
@@ -56,14 +23,13 @@
     "education": "Education:",
     "educationDetail": "Eskisehir Osmangazi University - Math and Computer Science, MSc",
     "role": "Preferred Role:",
-    "roleDetail": "Frontend Developer, UI",
+    "roleDetail": "Full Stack Developer",
     "aboutTitle": "About Me",
     "about1": "As a creative Full Stack Developer, I architect and build robust, scalable web solutions. I thrive on solving complex problems and transforming them into seamless, high-performance user experiences.",
     "about2": "From database design to pixel-perfect UIs, I am dedicated to writing clean, maintainable code that drives innovation and delivers real value to users.",
     "basicInfo": "Basic Information",
     "birthDate": "18.09.1996",
-    "cityVal": "Eskisehir",
-    "openToWork": "Open to Work"
+    "cityVal": "Eskisehir"
   },
   "projects": {
     "title": "Projects",
@@ -81,8 +47,6 @@
   "contact": {
     "title": "Contact Me",
     "subtitle": "Got a question, idea, or project? Feel free to reach out anytime.",
-    "email": "Your Email",
-    "submit": "Send Message",
     "footer": "All rights reserved."
   }
 }
