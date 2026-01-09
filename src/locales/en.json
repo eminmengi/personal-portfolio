@@ -6,10 +6,37 @@
     "light": "Light"
   },
   "hero": {
-    "title": "I am a Frontend Developer.",
-    "subtitle": "I like to craft solid and scalable frontend products with great user experiences.",
-    "github": "Github",
-    "linkedin": "LinkedIn"
+    "greeting": "Hello",
+    "downloadCv": "Download CV",
+    "intro": "I'm Emin Mengi. I'm a",
+    "typewriterWords": [
+      "Frontend Developer",
+      "React Developer",
+      "UI/UX Enthusiast",
+      "Tech Lover"
+    ],
+    "cta": "Let's build something great together.",
+    "description": [
+      {
+        "text": "Currently freelancing for",
+        "bold": false
+      },
+      {
+        "text": "User Experience, Usability, Design",
+        "bold": true,
+        "underline": true
+      },
+      {
+        "text": "projects. Invite me to join your team ->",
+        "bold": false
+      },
+      {
+        "text": "eminmengi@gmail.com",
+        "bold": true,
+        "isEmail": true,
+        "underline": true
+      }
+    ]
   },
   "skills": {
     "title": "Skills",

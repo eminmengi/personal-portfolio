@@ -6,10 +6,37 @@
     "light": "Aydınlık"
   },
   "hero": {
-    "title": "Ben bir Frontend Geliştiricisiyim.",
-    "subtitle": "Sağlam ve ölçeklenebilir arayüzler geliştirirken kullanıcı deneyimini ön planda tutarım.",
-    "github": "Github",
-    "linkedin": "LinkedIn"
+    "greeting": "Merhaba",
+    "downloadCv": "CV İndir",
+    "intro": "Ben Emin Mengi. Ben bir",
+    "typewriterWords": [
+      "Frontend Geliştiriciyim",
+      "React Geliştiriciyim",
+      "UI/UX Tutkunuyum",
+      "Teknoloji Severim"
+    ],
+    "cta": "Harika şeyler inşa edelim.",
+    "description": [
+      {
+        "text": "Şu anda",
+        "bold": false
+      },
+      {
+        "text": "Kullanıcı Deneyimi, Kullanılabilirlik, Tasarım",
+        "bold": true,
+        "underline": true
+      },
+      {
+        "text": "projeleri için serbest çalışıyorum. Beni takımınıza davet edin ->",
+        "bold": false
+      },
+      {
+        "text": "eminmengi@gmail.com",
+        "bold": true,
+        "isEmail": true,
+        "underline": true
+      }
+    ]
   },
   "skills": {
     "title": "Yetenekler",

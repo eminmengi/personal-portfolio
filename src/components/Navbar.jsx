@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <header className="absolute top-0 w-full bg-transparent z-50 pt-8">
       <div className="max-w-[960px] mx-auto flex justify-between items-center px-6">
-        <h1 className="text-[32px] font-bold text-[#CBF281]">Emin Mengi</h1>
+        <h1 className="text-[32px] font-bold text-[#CBF281]"></h1>
 
         <nav className="flex items-center gap-8 text-sm font-medium text-white">
           <button
