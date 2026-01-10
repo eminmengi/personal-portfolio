@@ -3,6 +3,7 @@ import Hero from './components/Hero'
 import Skills from './components/Skills'
 import Profile from './components/Profile'
 import Projects from './components/Projects'
+import ScrollToTop from './components/ScrollToTop'
 import Contact from './components/Contact'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Projects />
         <Contact />
       </main>
+      <ScrollToTop />
     </div>
   )
 }
