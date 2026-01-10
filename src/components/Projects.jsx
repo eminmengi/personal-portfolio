@@ -1,22 +1,23 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const projects = [
     {
         id: 1,
-        image: "/project1.png",
-        github: "#",
-        site: "#",
-        tech: ["React", "Redux", "Vercel"],
+        image: "/p1.png",
+        github: "https://github.com/eminmengi/e-ticaret",
+        site: "https://e-ticaret.vercel.app/",
+        tech: ["React", "JavaScript", "Redux", "Axios", "Tailwind CSS"],
         titleKey: "p1.title",
         descKey: "p1.desc",
     },
     {
         id: 2,
-        image: "/project2.png",
-        github: "#",
-        site: "#",
-        tech: ["React", "Redux", "Vercel"],
+        image: "/p2.png",
+        github: "https://github.com/eminmengi/fsweb-s8-challenge-pizza",
+        site: "https://fsweb-s8-challenge-pizza-beryl.vercel.app/",
+        tech: ["React", "React Router", "Axios", "Cypress", "Toastify"],
         titleKey: "p2.title",
         descKey: "p2.desc",
     },
@@ -26,63 +27,81 @@ const Projects = () => {
     const { t } = useTranslation();
 
     return (
-        <section id="projects" className="py-24 bg-[#CBF281] dark:bg-[#1A210B] transition-colors duration-300">
-            <div className="max-w-[1240px] mx-auto px-6">
-                <h2 className="text-[48px] font-bold text-[#4731D3] dark:text-[#CBF281] mb-12">
-                    {t("projects.title")}
-                </h2>
+        <section id="projects" className="py-24 bg-[#CBF281] dark:bg-[#1A210B] transition-colors duration-300 relative overflow-hidden">
+            {/* Background Decoration */}
+            <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+                <div className="absolute top-[10%] -left-[5%] w-[300px] h-[300px] bg-white opacity-20 dark:opacity-5 rounded-full blur-3xl" />
+                <div className="absolute bottom-[10%] -right-[5%] w-[400px] h-[400px] bg-[#4731D3] opacity-10 dark:opacity-20 rounded-full blur-3xl opacity-20" />
+            </div>
 
-                <div className="flex flex-col gap-16">
-                    {projects.map((p) => (
+            <div className="max-w-[1240px] mx-auto px-6 relative z-10">
+                <div className="flex flex-col gap-4 mb-20">
+                    <h2 className="text-[48px] font-bold text-[#4731D3] dark:text-[#CBF281] leading-tight">
+                        {t("projects.title")}
+                    </h2>
+                    <div className="w-24 h-1.5 bg-[#4731D3] dark:bg-[#CBF281] rounded-full" />
+                </div>
+
+                <div className="flex flex-col gap-12">
+                    {projects.map((p, index) => (
                         <motion.div
                             key={p.id}
                             initial={{ opacity: 0, y: 50 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.7 }}
-                            viewport={{ once: true }}
-                            className="group flex flex-col md:flex-row bg-white rounded-[12px] shadow-[0px_8px_28px_-6px_rgba(24,39,75,0.12),0px_18px_88px_-4px_rgba(24,39,75,0.14)] overflow-hidden min-h-[360px]"
+                            transition={{ duration: 0.8 }}
+                            viewport={{ once: true, margin: "-100px" }}
+                            className={`flex flex-col lg:flex-row gap-12 items-center p-8 rounded-3xl bg-white dark:bg-[#2B2733] shadow-2xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.1)] transition-all duration-300 ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}
                         >
-                            {/* Image */}
-                            <div className="w-full md:w-[360px] h-[360px] bg-gray-100 flex-shrink-0 relative overflow-hidden">
-                                <img
-                                    src={p.image}
-                                    alt={p.titleKey}
-                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                />
+                            {/* Image Section */}
+                            <div className="w-full lg:w-1/2 group">
+                                <div className="relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                                    <div className="absolute inset-0 bg-[#4731D3]/0 group-hover:bg-[#4731D3]/10 transition-colors duration-500 z-10" />
+                                    <img
+                                        src={p.image}
+                                        alt={t(`projects.${p.titleKey}`)}
+                                        className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out"
+                                    />
+                                </div>
                             </div>
 
-                            {/* Content */}
-                            <div className="flex flex-col justify-center p-8 md:px-12 gap-6 w-full">
-                                <h3 className="text-[32px] font-bold text-[#4338CA] leading-none">
+                            {/* Content Section */}
+                            <div className="w-full lg:w-1/2 flex flex-col gap-6">
+                                <h3 className="text-[32px] md:text-[40px] font-bold text-[#4731D3] dark:text-white leading-[1.1]">
                                     {t(`projects.${p.titleKey}`)}
                                 </h3>
 
-                                <p className="text-[16px] leading-[20px] text-[#383838]">
+                                <p className="text-[18px] leading-relaxed text-[#120B39]/80 dark:text-white/80 font-medium">
                                     {t(`projects.${p.descKey}`)}
                                 </p>
 
-                                <div className="flex flex-wrap gap-2.5">
+                                <div className="flex flex-wrap gap-3 my-2">
                                     {p.tech.map((tech, i) => (
                                         <span
                                             key={i}
-                                            className="px-[18px] py-[8px] bg-[#4731D3] text-white rounded-[23px] text-[14px] font-medium leading-none"
+                                            className="px-4 py-1.5 bg-[#4731D3] text-white dark:bg-[#CBF281] dark:text-[#120B39] rounded-full text-sm font-semibold shadow-sm"
                                         >
                                             {tech}
                                         </span>
                                     ))}
                                 </div>
 
-                                <div className="flex gap-6 mt-2">
+                                <div className="flex gap-4 mt-4">
                                     <a
                                         href={p.github}
-                                        className="text-[#120B39] text-[16px] font-medium underline underline-offset-4"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="flex items-center gap-2 px-6 py-3 bg-[#4731D3] text-white rounded-lg font-bold hover:bg-[#3525a5] hover:-translate-y-1 transition-all duration-300 shadow-lg"
                                     >
+                                        <FaGithub size={20} />
                                         {t("projects.github")}
                                     </a>
                                     <a
                                         href={p.site}
-                                        className="text-[#120B39] text-[16px] font-medium underline underline-offset-4"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="flex items-center gap-2 px-6 py-3 bg-white text-[#4731D3] border-2 border-[#4731D3] rounded-lg font-bold hover:bg-[#4731D3] hover:text-white hover:-translate-y-1 transition-all duration-300 shadow-lg"
                                     >
+                                        <FaExternalLinkAlt size={18} />
                                         {t("projects.view")}
                                     </a>
                                 </div>

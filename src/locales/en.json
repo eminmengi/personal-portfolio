@@ -36,12 +36,12 @@
     "view": "View Site",
     "github": "Github",
     "p1": {
-      "title": "E-commerce Project",
-      "desc": "An educational platform project focused on React, Redux and modern UI principles. Includes dynamic components and responsive layouts."
+      "title": "E-Commerce React App",
+      "desc": "A fully responsive, mobile-first e-commerce app featuring product filtering, cart management, and interactive Swiper sliders. Built with React Router, Redux Thunk for state management, Axios for API calls, and Toastify notifications."
     },
     "p2": {
-      "title": "Journey",
-      "desc": "A personal project tracker application with Context API, animations and full responsiveness."
+      "title": "Pizza Order SPA",
+      "desc": "A Single Page Application (SPA) designed for pizza ordering. Features form validation, client-side routing with React Router, API integration via Axios, and end-to-end testing with Cypress."
     }
   },
   "contact": {

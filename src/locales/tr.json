@@ -36,12 +36,12 @@
     "view": "Siteyi Görüntüle",
     "github": "Github",
     "p1": {
-      "title": "E-commerce",
-      "desc": "React, Redux ve modern arayüz ilkelerine odaklanan bir eğitim platformu projesi. Dinamik bileşenler ve responsive tasarım içerir."
+      "title": "E-Ticaret React Uygulaması",
+      "desc": "Ürün filtreleme, sepet yönetimi ve etkileşimli Swiper slider'lar içeren, mobil öncelikli responsive e-ticaret uygulaması. React Router, Redux Thunk state yönetimi, Axios API entegrasyonu ve Toastify bildirimleri ile geliştirildi."
     },
     "p2": {
-      "title": "Journey",
-      "desc": "Context API, animasyonlar ve tam responsive yapı kullanan bir kişisel proje takip uygulaması."
+      "title": "Pizza Sipariş Uygulaması",
+      "desc": "Pizza siparişi için geliştirilmiş bir Single Page Application (SPA). React Router ile istemci taraflı yönlendirme, form validasyonu, Axios ile API entegrasyonu ve Cypress ile uçtan uca testler içerir."
     }
   },
   "contact": {
