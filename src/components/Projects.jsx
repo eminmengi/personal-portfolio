@@ -21,6 +21,16 @@ const projects = [
         titleKey: "p2.title",
         descKey: "p2.desc",
     },
+    {
+        id: 3,
+        image: "/p3.png",
+        github: "https://github.com/eminmengi/twitter-clone-frontend",
+        githubBackend: "https://github.com/eminmengi/twitter-clone-backend",
+        site: "https://twitter-clone-frontend-one.vercel.app/",
+        tech: ["Java", "Spring Boot", "OOP", "React", "PostgreSQL"],
+        titleKey: "p3.title",
+        descKey: "p3.desc",
+    },
 ];
 
 const Projects = () => {
@@ -85,7 +95,7 @@ const Projects = () => {
                                     ))}
                                 </div>
 
-                                <div className="flex gap-4 mt-4">
+                                <div className="flex flex-wrap gap-4 mt-4">
                                     <a
                                         href={p.github}
                                         target="_blank"
@@ -93,17 +103,32 @@ const Projects = () => {
                                         className="flex items-center gap-2 px-6 py-3 bg-[#4731D3] text-white rounded-lg font-bold hover:bg-[#3525a5] hover:-translate-y-1 transition-all duration-300 shadow-lg"
                                     >
                                         <FaGithub size={20} />
-                                        {t("projects.github")}
+                                        {p.githubBackend ? "Frontend" : t("projects.github")}
                                     </a>
-                                    <a
-                                        href={p.site}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="flex items-center gap-2 px-6 py-3 bg-white text-[#4731D3] border-2 border-[#4731D3] rounded-lg font-bold hover:bg-[#4731D3] hover:text-white hover:-translate-y-1 transition-all duration-300 shadow-lg"
-                                    >
-                                        <FaExternalLinkAlt size={18} />
-                                        {t("projects.view")}
-                                    </a>
+
+                                    {p.githubBackend && (
+                                        <a
+                                            href={p.githubBackend}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="flex items-center gap-2 px-6 py-3 bg-[#4731D3] text-white rounded-lg font-bold hover:bg-[#3525a5] hover:-translate-y-1 transition-all duration-300 shadow-lg"
+                                        >
+                                            <FaGithub size={20} />
+                                            Backend
+                                        </a>
+                                    )}
+
+                                    {p.site && (
+                                        <a
+                                            href={p.site}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="flex items-center gap-2 px-6 py-3 bg-white text-[#4731D3] border-2 border-[#4731D3] rounded-lg font-bold hover:bg-[#4731D3] hover:text-white hover:-translate-y-1 transition-all duration-300 shadow-lg"
+                                        >
+                                            <FaExternalLinkAlt size={18} />
+                                            {t("projects.view")}
+                                        </a>
+                                    )}
                                 </div>
                             </div>
                         </motion.div>

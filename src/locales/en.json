@@ -42,6 +42,10 @@
     "p2": {
       "title": "Pizza Order SPA",
       "desc": "A Single Page Application (SPA) designed for pizza ordering. Features form validation, client-side routing with React Router, API integration via Axios, and end-to-end testing with Cypress."
+    },
+    "p3": {
+      "title": "Twitter Clone",
+      "desc": "A feature-rich social media platform with a Spring Boot backend and React frontend. Includes JWT authentication, real-time interactions (likes, retweets, comments), and a PostgreSQL database."
     }
   },
   "contact": {

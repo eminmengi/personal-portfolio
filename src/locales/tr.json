@@ -42,10 +42,14 @@
     "p2": {
       "title": "Pizza Sipariş Uygulaması",
       "desc": "Pizza siparişi için geliştirilmiş bir Single Page Application (SPA). React Router ile istemci taraflı yönlendirme, form validasyonu, Axios ile API entegrasyonu ve Cypress ile uçtan uca testler içerir."
+    },
+    "p3": {
+      "title": "Twitter Klonu",
+      "desc": "Spring Boot backend ve React frontend ile geliştirilmiş kapsamlı bir sosyal medya platformu. JWT kimlik doğrulama, gerçek zamanlı etkileşimler (beğeni, retweet, yorum) ve PostgreSQL veritabanı içerir."
     }
   },
   "contact": {
-    "title": "Bana Ulaş",
+    "title": "İletişime Geçin",
     "subtitle": "Bir sorunuz, fikriniz veya projeniz mi var? Dilediğiniz zaman iletişime geçebilirsiniz.",
     "footer": "Tüm hakları saklıdır."
   }

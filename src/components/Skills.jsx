@@ -19,21 +19,21 @@ import {
 } from "react-icons/si";
 
 const skills = [
-  // Row 1 (Frontend)
+  // Row 1
   { name: "JAVASCRIPT", icon: <SiJavascript className="text-[#F7DF1E] text-5xl" />, key: "js" },
   { name: "REACT", icon: <SiReact className="text-[#61DAFB] text-5xl" />, key: "react" },
   { name: "REDUX", icon: <SiRedux className="text-[#764ABC] text-5xl" />, key: "redux" },
   { name: "TANSTACK QUERY", icon: <SiReactquery className="text-[#FF4154] text-5xl" />, key: "query" },
   { name: "TAILWIND CSS", icon: <SiTailwindcss className="text-[#06B6D4] text-5xl" />, key: "tailwind" },
 
-  // Row 2 (Backend)
+  // Row 2
   { name: "NODE.JS", icon: <SiNodedotjs className="text-[#339933] text-5xl" />, key: "node" },
   { name: "PYTHON", icon: <SiPython className="text-[#3776AB] text-5xl" />, key: "python" },
   { name: "DJANGO", icon: <SiDjango className="text-[#092E20] text-5xl" />, key: "django" },
   { name: "PHP", icon: <SiPhp className="text-[#777BB4] text-5xl" />, key: "php" },
   { name: "LARAVEL", icon: <SiLaravel className="text-[#FF2D20] text-5xl" />, key: "laravel" },
 
-  // Row 3 (Mixed)
+  // Row 3
   { name: "SPRING BOOT", icon: <SiSpringboot className="text-[#6DB33F] text-5xl" />, key: "spring" },
   { name: "POSTGRESQL", icon: <SiPostgresql className="text-[#4169E1] text-5xl" />, key: "postgres" },
   { name: "CYPRESS", icon: <SiCypress className="text-[#17202C] text-5xl dark:text-white" />, key: "cypress" },
