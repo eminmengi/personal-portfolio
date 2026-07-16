@@ -48,8 +48,8 @@
       "desc": "Spring Boot backend ve React frontend ile geliştirilmiş kapsamlı bir sosyal medya platformu. JWT kimlik doğrulama, gerçek zamanlı etkileşimler (beğeni, retweet, yorum) ve PostgreSQL veritabanı içerir."
     },
     "p4": {
-      "title": "Aesir Gambit (Orlog)",
-      "desc": "Assassin's Creed Valhalla'daki antik Viking oyunu Orlog'un dijital uyarlaması. Üç boyutlu fizik hissini saf CSS 3D transformları ve Framer Motion ile sağlayan, Zustand asenkron durum makinesi ile yönetilen, ve sezgisel yapay zeka (Heuristic AI) motoruna sahip derinlikli bir strateji oyunudur."
+      "title": "Aesir Gambit",
+      "desc": "Kendi oyun motoru mantığıyla tasarlanmış, İskandinav mitolojisi temalı taktiksel zeka ve strateji zar oyunu. Üç boyutlu fizik hissini saf CSS 3D transformları ve Framer Motion ile sağlayan, Zustand asenkron durum makinesi ile yönetilen ve 3 farklı zorluk seviyesinde sezgisel yapay zeka (Heuristic AI) içeren derinlikli bir web oyunudur."
     }
   },
   "contact": {
