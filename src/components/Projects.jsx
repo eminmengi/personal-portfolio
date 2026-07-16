@@ -4,6 +4,15 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const projects = [
     {
+        id: 4,
+        image: "/p4.png",
+        github: "https://github.com/eminmengi/aesir-gambit",
+        site: "https://aesir-gambit.vercel.app/",
+        tech: ["React", "TypeScript", "Zustand", "Framer Motion", "Tailwind CSS"],
+        titleKey: "p4.title",
+        descKey: "p4.desc",
+    },
+    {
         id: 1,
         image: "/p1.png",
         github: "https://github.com/eminmengi/e-ticaret",

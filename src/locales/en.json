@@ -46,6 +46,10 @@
     "p3": {
       "title": "Twitter Clone",
       "desc": "A feature-rich social media platform with a Spring Boot backend and React frontend. Includes JWT authentication, real-time interactions (likes, retweets, comments), and a PostgreSQL database."
+    },
+    "p4": {
+      "title": "Aesir Gambit (Orlog)",
+      "desc": "A digital implementation of the ancient Viking game Orlog from Assassin's Creed Valhalla. Features an immersive 3D-like experience built with pure CSS 3D transforms and Framer Motion, managed via an asynchronous Zustand state machine, and powered by a heuristic AI decision engine."
     }
   },
   "contact": {
