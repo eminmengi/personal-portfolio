@@ -33,7 +33,7 @@ const projects = [
     },
     {
         id: 4,
-        image: "/p4_gameplay.png",
+        image: "/p4.png",
         github: "https://github.com/eminmengi/aesir-gambit",
         site: "https://aesir-gambit.vercel.app/",
         tech: ["React", "TypeScript", "Zustand", "Framer Motion", "Tailwind CSS"],
